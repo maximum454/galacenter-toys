@@ -1,0 +1,238 @@
+/*
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
+*/
+
+/*
+  Maintain ratio mixin.
+  @param {List} [$ratio] Ratio the element needs to maintain. A 16:9 ratio would look like this:
+  .element { @include maintain-ratio(16 9); }
+*/
+
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("../fonts/RobotoSlab/RobotoSlab-Bold.woff2") format("woff2"), url("../fonts/RobotoSlab/RobotoSlab-Bold.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("../fonts/RobotoSlab/RobotoSlab-Regular.woff2") format("woff2"), url("../fonts/RobotoSlab/RobotoSlab-Regular.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../fonts/RobotoMono/RobotoMono-Bold.woff2") format("woff2"), url("../fonts/RobotoMono/RobotoMono-Bold.woff") format("woff"), url("../fonts/RobotoMono/RobotoMono-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  background-image: url("../img/bg.png");
+}
+
+.main {
+  margin-top: -40px;
+  position: relative;
+}
+
+.main.container {
+  max-width: 1116px;
+}
+
+.breadcrumb {
+  display: none;
+}
+
+.footer {
+  margin-top: 0;
+}
+
+.title-toys {
+  font-family: "RobotoSlab", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 63px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 0 14px;
+}
+
+.subtitle-toys {
+  font-family: "RobotoSlab", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.btn {
+  font-family: "RobotoMono", serif;
+  display: inline-block;
+  padding: 19px 62px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  color: #fff;
+  background-color: #AB4A9C;
+  -webkit-box-shadow: 0 7px #872774;
+          box-shadow: 0 7px #872774;
+}
+
+.btn.btn-primary:hover {
+  background-color: #872774;
+  color: #fff;
+}
+
+.btn.btn-primary:active {
+  background-color: #872774 !important;
+}
+
+.btn.btn-primary:focus-visible {
+  -webkit-box-shadow: 0 0 0 3px #872774;
+          box-shadow: 0 0 0 3px #872774;
+}
+
+.btn.btn-primary:disabled {
+  background-color: #872774;
+  pointer-events: none;
+}
+
+.btn.btn-secondary {
+  color: #fff;
+  background-color: #84BB0F;
+  -webkit-box-shadow: 0 7px #69940E;
+          box-shadow: 0 7px #69940E;
+}
+
+.btn.btn-secondary:hover {
+  background-color: #84BB0F;
+  color: #fff;
+}
+
+.btn.btn-secondary:active {
+  background-color: #69940E !important;
+}
+
+.btn.btn-secondary:focus-visible {
+  -webkit-box-shadow: 0 0 0 3px #69940E;
+          box-shadow: 0 0 0 3px #69940E;
+}
+
+.btn.btn-secondary:disabled {
+  background-color: #69940E;
+  pointer-events: none;
+}
+
+.header-toys {
+  margin-bottom: 67px;
+}
+
+.header-toys__body {
+  background-image: url("../img/header-toys-bg.png");
+  background-repeat: no-repeat;
+  padding: 300px 188px 262px;
+  position: relative;
+}
+
+.header-toys__body:before {
+  content: "";
+  position: absolute;
+  top: 62px;
+  left: -100px;
+  background-image: url("../img/cloud-1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 673px;
+  height: 348px;
+}
+
+.header-toys__body:after {
+  content: "";
+  position: absolute;
+  bottom: -62px;
+  right: -168px;
+  background-image: url("../img/cloud-3.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 512px;
+  height: 244px;
+}
+
+.header-toys__item {
+  position: relative;
+}
+
+.header-toys__item:before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -323px;
+  background-image: url("../img/cloud-2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 272px;
+  height: 170px;
+}
+
+.header-toys .btn {
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.gender-toys__item {
+  background-color: #78AFE2;
+  position: relative;
+  height: 236px;
+  width: 406px;
+  margin-left: 75px;
+}
+
+.gender-toys__img {
+  position: absolute;
+  bottom: 0;
+  left: -175px;
+}
+
+.gender-toys__img img {
+  display: block;
+}
+
+.gender-toys h3 {
+  font-family: "RobotoSlab", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.gender-toys .btn {
+  position: absolute;
+  bottom: -34px;
+  right: -20px;
+}
