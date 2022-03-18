@@ -2,30 +2,14 @@
 @import "./fonts";
 
 body{
-	background-color: #FFFFFF;
 	background-image: url("../img/bg.png");
 }
 .main{
 	margin-top: -40px;
 	position: relative;
-	&:after{
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		margin: 0 auto;
-		transform: translate(-50%,0);
-		width: 100vw;
-		height: 100%;
-		background-image: url("../img/main-bg.png");
-		background-position: bottom;
-		background-repeat: no-repeat;
-		pointer-events: none;
-		z-index: 0;
-	}
 }
 .main.container{
-	max-width: 1076px;
+	max-width: 1116px;
 }
 .breadcrumb{
 	display: none;
@@ -33,30 +17,82 @@ body{
 .footer{
 	margin-top: 0;
 }
-.title-gadgets{
+.title-toys{
 	font-family: $font1;
-	font-weight: 900;
-	font-size: 18px;
-	line-height: 17px;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 63px;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
-	color: #302F2F;
-	margin: 0 0 37px;
+	color: #FFFFFF;
+	margin: 0 0 14px;
+}
+.subtitle-toys{
+	font-family: $font1;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin: 0;
 }
 
+.btn {
+	font-family: $font2;
+	display: inline-block;
+	padding: 19px 62px;
+	outline: none;
+	border: none;
+	border-radius: 50px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	text-decoration: none;
+
+	cursor: pointer;
+	&.btn-primary{
+		color: #fff;
+		background-color: #AB4A9C;
+		box-shadow: 0 7px #872774;
+		&:hover {
+			background-color: #872774;
+			color: #fff;
+		}
+		&:active {
+			background-color: #872774 !important;
+		}
+		&:focus-visible {
+			box-shadow: 0 0 0 3px #872774;
+		}
+		&:disabled {
+			background-color: #872774;
+			pointer-events: none;
+		}
+	}
+	&.btn-secondary{
+		color: #fff;
+		background-color: #84BB0F;
+		box-shadow: 0 7px #69940E;
+		&:hover {
+			background-color: #84BB0F;
+			color: #fff;
+		}
+		&:active {
+			background-color: #69940E !important;
+		}
+		&:focus-visible {
+			box-shadow: 0 0 0 3px #69940E;
+		}
+		&:disabled {
+			background-color: #69940E;
+			pointer-events: none;
+		}
+	}
+}
 
 @include r(767){
-	.title-gadgets{
-		font-size: 16px;
-		line-height: 15px;
-		margin-bottom: 24px;
-	}
-	.main{
-		padding-bottom: 47px;
-	}
+
 }
 
-@import "componets/header-gadgets";
-@import "componets/slider-gadgets";
-@import "componets/block-gadgets";
-@import "componets/banner-by";
+@import "componets/header-toys";

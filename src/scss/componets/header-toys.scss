@@ -1,0 +1,51 @@
+.header-toys{
+	margin-bottom: 67px;
+	&__body{
+		background-image: url("../img/header-toys-bg.png");
+		background-repeat: no-repeat;
+		padding: 300px 188px 262px;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 62px;
+			left: -100px;
+			background-image: url("../img/cloud-1.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 673px;
+			height: 348px;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: -62px;
+			right: -168px;
+			background-image: url("../img/cloud-3.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 512px;
+			height: 244px;
+		}
+	}
+	&__item{
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: -100px;
+			right: -323px;
+			background-image: url("../img/cloud-2.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 272px;
+			height: 170px;
+		}
+	}
+	.btn{
+		margin-left: auto;
+		margin-right: 0;
+		display: block;
+		width: fit-content;
+	}
+}
