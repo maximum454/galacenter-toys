@@ -1,0 +1,45 @@
+.banner-toys{
+	margin-bottom: 156px;
+	&__body{
+		background-color: #31C9C9;
+
+	}
+	&__item{
+		padding: 88px 144px;
+		position: relative;
+	}
+	&__title{
+		font-family: $font1;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin-bottom: 12px;
+	}
+	&__subtitle{
+		font-family: $font1;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin-bottom: 12px;
+	}
+	&__img{
+		position: absolute;
+		top: 50%;
+		right: -100px;
+		transform: translate(0,-50%);
+	}
+	.btn-toys{
+		margin-left: auto;
+		margin-right: 200px;
+		display: block;
+		width: fit-content;
+	}
+}

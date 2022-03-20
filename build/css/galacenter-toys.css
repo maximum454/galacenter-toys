@@ -33,6 +33,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../fonts/RobotoMono/RobotoMono-Regular.woff2") format("woff2"), url("../fonts/RobotoMono/RobotoMono-Regular.woff") format("woff"), url("../fonts/RobotoMono/RobotoMono-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 body {
   background-image: url("../img/bg.png");
 }
@@ -76,7 +84,7 @@ body {
   margin: 0;
 }
 
-.btn {
+.btn-toys {
   font-family: "RobotoMono", serif;
   display: inline-block;
   padding: 19px 62px;
@@ -87,57 +95,66 @@ body {
   font-size: 24px;
   line-height: 32px;
   text-decoration: none;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
-.btn.btn-primary {
+.btn-toys__primary {
   color: #fff;
   background-color: #AB4A9C;
   -webkit-box-shadow: 0 7px #872774;
           box-shadow: 0 7px #872774;
 }
 
-.btn.btn-primary:hover {
+.btn-toys__primary:hover {
   background-color: #872774;
   color: #fff;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-.btn.btn-primary:active {
+.btn-toys__primary:active {
   background-color: #872774 !important;
 }
 
-.btn.btn-primary:focus-visible {
+.btn-toys__primary:focus-visible {
   -webkit-box-shadow: 0 0 0 3px #872774;
           box-shadow: 0 0 0 3px #872774;
 }
 
-.btn.btn-primary:disabled {
+.btn-toys__primary:disabled {
   background-color: #872774;
   pointer-events: none;
 }
 
-.btn.btn-secondary {
+.btn-toys__secondary {
   color: #fff;
   background-color: #84BB0F;
   -webkit-box-shadow: 0 7px #69940E;
           box-shadow: 0 7px #69940E;
 }
 
-.btn.btn-secondary:hover {
-  background-color: #84BB0F;
+.btn-toys__secondary:hover {
+  background-color: #69940E;
   color: #fff;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-.btn.btn-secondary:active {
+.btn-toys__secondary:active {
   background-color: #69940E !important;
 }
 
-.btn.btn-secondary:focus-visible {
+.btn-toys__secondary:focus-visible {
   -webkit-box-shadow: 0 0 0 3px #69940E;
           box-shadow: 0 0 0 3px #69940E;
 }
 
-.btn.btn-secondary:disabled {
+.btn-toys__secondary:disabled {
   background-color: #69940E;
   pointer-events: none;
 }
@@ -193,7 +210,7 @@ body {
   height: 170px;
 }
 
-.header-toys .btn {
+.header-toys .btn-toys {
   margin-left: auto;
   margin-right: 0;
   display: block;
@@ -202,12 +219,90 @@ body {
   width: fit-content;
 }
 
+.gender-toys {
+  margin-bottom: 156px;
+}
+
+.gender-toys__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .gender-toys__item {
   background-color: #78AFE2;
   position: relative;
   height: 236px;
   width: 406px;
-  margin-left: 75px;
+  margin-bottom: 182px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 40px;
+}
+
+.gender-toys__item--boys {
+  background-color: #DCA824;
+}
+
+.gender-toys__item--baby {
+  width: 100%;
+  max-width: 690px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 83px;
+  background-color: #AB4A9C;
+  margin-left: 100px;
+}
+
+.gender-toys__item--baby .gender-toys__img {
+  position: relative;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  left: 0;
+  top: -100px;
+}
+
+.gender-toys__item--baby .btn-toys {
+  bottom: 50% !important;
+  -webkit-transform: translate(60px, 50%);
+      -ms-transform: translate(60px, 50%);
+          transform: translate(60px, 50%);
+}
+
+.gender-toys__item--baby:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -128px;
+  background-image: url("../img/ball.png");
+  width: 205px;
+  height: 325px;
+  z-index: 1;
+}
+
+.gender-toys__item--baby:after {
+  content: "";
+  position: absolute;
+  top: -92px;
+  left: -282px;
+  background-image: url("../img/cloud-4.png");
+  width: 406px;
+  height: 223px;
+  z-index: 0;
 }
 
 .gender-toys__img {
@@ -231,8 +326,65 @@ body {
   margin: 0;
 }
 
-.gender-toys .btn {
+.gender-toys .btn-toys {
   position: absolute;
   bottom: -34px;
   right: -20px;
+  padding: 19px 23px;
+  font-weight: 400;
+}
+
+.banner-toys {
+  margin-bottom: 156px;
+}
+
+.banner-toys__body {
+  background-color: #31C9C9;
+}
+
+.banner-toys__item {
+  padding: 88px 144px;
+  position: relative;
+}
+
+.banner-toys__title {
+  font-family: "RobotoSlab", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.banner-toys__subtitle {
+  font-family: "RobotoSlab", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.banner-toys__img {
+  position: absolute;
+  top: 50%;
+  right: -100px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.banner-toys .btn-toys {
+  margin-left: auto;
+  margin-right: 200px;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }

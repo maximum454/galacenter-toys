@@ -38,7 +38,7 @@ body{
 	margin: 0;
 }
 
-.btn {
+.btn-toys {
 	font-family: $font2;
 	display: inline-block;
 	padding: 19px 62px;
@@ -49,15 +49,16 @@ body{
 	font-size: 24px;
 	line-height: 32px;
 	text-decoration: none;
-
+	transition: background-color .3s ease;
 	cursor: pointer;
-	&.btn-primary{
+	&__primary{
 		color: #fff;
 		background-color: #AB4A9C;
 		box-shadow: 0 7px #872774;
 		&:hover {
 			background-color: #872774;
 			color: #fff;
+			transition: background-color .3s ease;
 		}
 		&:active {
 			background-color: #872774 !important;
@@ -70,13 +71,14 @@ body{
 			pointer-events: none;
 		}
 	}
-	&.btn-secondary{
+	&__secondary{
 		color: #fff;
 		background-color: #84BB0F;
 		box-shadow: 0 7px #69940E;
 		&:hover {
-			background-color: #84BB0F;
+			background-color: #69940E;
 			color: #fff;
+			transition: background-color .3s ease;
 		}
 		&:active {
 			background-color: #69940E !important;
@@ -97,3 +99,5 @@ body{
 
 @import "componets/header-toys";
 @import "componets/gender-toys";
+@import "componets/category-toys";
+@import "componets/banner-toys";
