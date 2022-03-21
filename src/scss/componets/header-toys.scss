@@ -1,54 +1,136 @@
 .header-toys{
-	margin-bottom: 67px;
-	&__body{
-		background-image: url("../img/header-toys-bg.png");
+	margin-bottom: 157px;
+	position: relative;
+	&__monstr{
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-image: url("../img/header-toys-monstr.png");
 		background-repeat: no-repeat;
-		padding: 300px 188px 262px;
+		background-size: 100%;
+		width: 307px;
+		height: 440px;
+	}
+	&__cloud1{
+		position: absolute;
+		top: 62px;
+		left: -170px;
+		background-image: url("../img/cloud-1.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 673px;
+		height: 266px;
+		pointer-events: none;
+		z-index: 1;
+	}
+	&__cloud2{
+		position: absolute;
+		top: 200px;
+		right:-130px;
+		background-image: url("../img/cloud-2.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 272px;
+		height: 128px;
+		pointer-events: none;
+		z-index: 10;
+	}
+	&__cloud3{
+		position: absolute;
+		bottom: -100px;
+		right: -168px;
+		background-image: url("../img/cloud-3.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 512px;
+		height: 244px;
+		pointer-events: none;
+		z-index: 1;
+	}
+	&__body{
+		padding: 200px 0 0;
 		position: relative;
-		&:before{
-			content: '';
-			position: absolute;
-			top: 62px;
-			left: -170px;
-			background-image: url("../img/cloud-1.png");
-			background-repeat: no-repeat;
-			background-size: 100%;
-			width: 673px;
-			height: 348px;
-			pointer-events: none;
-		}
-		&:after{
-			content: '';
-			position: absolute;
-			bottom: -62px;
-			right: -168px;
-			background-image: url("../img/cloud-3.png");
-			background-repeat: no-repeat;
-			background-size: 100%;
-			width: 512px;
-			height: 244px;
-			pointer-events: none;
-		}
+
+
 	}
 	&__item{
+		background-color: #84BB0F;
+		padding: 150px 20px 200px 150px;
 		position: relative;
+		overflow: hidden;
 		&:before{
 			content: '';
 			position: absolute;
-			top: -100px;
-			right: -323px;
-			background-image: url("../img/cloud-2.png");
+			bottom: -200px;
+			left: 0;
+			background-image: url("../img/header-toys-lego.png");
 			background-repeat: no-repeat;
 			background-size: 100%;
-			width: 272px;
-			height: 170px;
-			pointer-events: none;
+			width: 679px;
+			height: 455px;
+			z-index: 0;
 		}
+
 	}
 	.btn-toys{
 		margin-left: auto;
 		margin-right: 0;
 		display: block;
 		width: fit-content;
+		position: relative;
+		z-index: 1;
+	}
+	@include r(1023){
+		&__item{
+			padding: 150px 0 150px;
+			text-align: center;
+		}
+		.btn-toys{
+			margin-top: 33px;
+			margin-right: auto;
+		}
+	}
+	@include r(767){
+		&__body{
+			padding: 112px 0 0;
+
+		}
+		&__monstr{
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-image: url("../img/header-toys-monstr.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 160px;
+			height: 160px;
+		}
+		&__cloud1{
+			position: absolute;
+			top: 62px;
+			left: -170px;
+			background-image: url("../img/cloud-1.png");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 400px;
+			height: 266px;
+			pointer-events: none;
+			z-index: 1;
+		}
+		&__cloud2{
+			display: none;
+		}
+		&__cloud3{
+			display: none;
+		}
+		&__item{
+			&:before{
+				bottom: -200px;
+				left: 0;
+				width: 320px;
+				height: 320px;
+				z-index: 0;
+			}
+		}
 	}
 }

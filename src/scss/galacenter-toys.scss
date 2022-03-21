@@ -94,7 +94,14 @@ body{
 }
 
 @include r(767){
-
+	.title-toys{
+		font-size: 24px;
+		line-height: 32px;
+	}
+	.subtitle-toys{
+		font-size: 14px;
+		line-height: 18px;
+	}
 }
 
 @import "componets/header-toys";

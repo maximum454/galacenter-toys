@@ -160,18 +160,22 @@ body {
 }
 
 .header-toys {
-  margin-bottom: 67px;
-}
-
-.header-toys__body {
-  background-image: url("../img/header-toys-bg.png");
-  background-repeat: no-repeat;
-  padding: 300px 188px 262px;
+  margin-bottom: 157px;
   position: relative;
 }
 
-.header-toys__body:before {
-  content: "";
+.header-toys__monstr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../img/header-toys-monstr.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 307px;
+  height: 440px;
+}
+
+.header-toys__cloud1 {
   position: absolute;
   top: 62px;
   left: -170px;
@@ -179,14 +183,27 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   width: 673px;
-  height: 348px;
+  height: 266px;
   pointer-events: none;
+  z-index: 1;
 }
 
-.header-toys__body:after {
-  content: "";
+.header-toys__cloud2 {
   position: absolute;
-  bottom: -62px;
+  top: 200px;
+  right: -130px;
+  background-image: url("../img/cloud-2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 272px;
+  height: 128px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.header-toys__cloud3 {
+  position: absolute;
+  bottom: -100px;
   right: -168px;
   background-image: url("../img/cloud-3.png");
   background-repeat: no-repeat;
@@ -194,23 +211,32 @@ body {
   width: 512px;
   height: 244px;
   pointer-events: none;
+  z-index: 1;
+}
+
+.header-toys__body {
+  padding: 200px 0 0;
+  position: relative;
 }
 
 .header-toys__item {
+  background-color: #84BB0F;
+  padding: 150px 20px 200px 150px;
   position: relative;
+  overflow: hidden;
 }
 
 .header-toys__item:before {
   content: "";
   position: absolute;
-  top: -100px;
-  right: -323px;
-  background-image: url("../img/cloud-2.png");
+  bottom: -200px;
+  left: 0;
+  background-image: url("../img/header-toys-lego.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 272px;
-  height: 170px;
-  pointer-events: none;
+  width: 679px;
+  height: 455px;
+  z-index: 0;
 }
 
 .header-toys .btn-toys {
@@ -220,6 +246,8 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  position: relative;
+  z-index: 1;
 }
 
 .gender-toys {
@@ -595,6 +623,16 @@ body {
 }
 
 @media only screen and (max-width: 1023px) {
+  .header-toys__item {
+    padding: 150px 0 150px;
+    text-align: center;
+  }
+
+  .header-toys .btn-toys {
+    margin-top: 33px;
+    margin-right: auto;
+  }
+
   .gender-toys__item {
     width: 100%;
   }
@@ -768,5 +806,61 @@ body {
 
   .category-toys__item--book .category-toys__img img {
     max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .title-toys {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .subtitle-toys {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .header-toys__body {
+    padding: 112px 0 0;
+  }
+
+  .header-toys__monstr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../img/header-toys-monstr.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 160px;
+    height: 160px;
+  }
+
+  .header-toys__cloud1 {
+    position: absolute;
+    top: 62px;
+    left: -170px;
+    background-image: url("../img/cloud-1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 400px;
+    height: 266px;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .header-toys__cloud2 {
+    display: none;
+  }
+
+  .header-toys__cloud3 {
+    display: none;
+  }
+
+  .header-toys__item:before {
+    bottom: -200px;
+    left: 0;
+    width: 320px;
+    height: 320px;
+    z-index: 0;
   }
 }
