@@ -218,4 +218,141 @@
 			}
 		}
 	}
+	@include r(767){
+		margin-bottom: 0;
+		&__body{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			gap: 0;
+		}
+		&__item{
+			margin-bottom: 42px;
+			width: 80%;
+			height: 108px;
+			&--licensed{
+				grid-area: licensed;
+				height: auto;
+				padding-left: 40px;
+				margin-left: auto;
+				margin-right: 0;
+				order: 1;
+				.category-toys__img{
+					position: absolute;
+					top: -38px;
+					left: -82px;
+					img{
+						max-width: 140px;
+					}
+				}
+
+			}
+			&--games{
+				grid-area: games;
+				height: auto;
+				text-align: left;
+				justify-content: center;
+				order: 3;
+				margin-right: 0;
+				margin-left: auto;
+				.category-toys__img{
+					position: absolute;
+					top: 50%;
+					transform: translate(0, -50%);
+					left: -20%;
+					z-index: 1;
+					img{
+						max-width: 114px;
+					}
+				}
+			}
+			&--children{
+				grid-area: children;
+				background-color: #F4DC03;
+				height: auto;
+				width: 100%;
+				margin-right: auto;
+				margin-left: 0;
+				order: 4;
+				.category-toys__img{
+					position: absolute;
+					top: 50%;
+					right: -5%;
+					left: auto;
+					transform: translate(0,-50%);
+					img{
+						max-width: 140px;
+					}
+				}
+			}
+			&--creation{
+				grid-area: creation;
+				background-color: #69940E;
+				height: auto;
+				margin-top: 0;
+				order: 2;
+				.category-toys__img{
+					position: absolute;
+					top: 50%;
+					right: -28%;
+					transform: translate(0,-50%);
+					img{
+						max-width: 140px;
+					}
+				}
+			}
+			&--avto{
+				grid-area: avto;
+				background-color: #842424;
+				height: 106px;
+				width: 100%;
+				order: 6;
+				.category-toys__img{
+					position: absolute;
+					top:auto;
+					bottom: -20px;
+					left: auto;
+					right: 0;
+					transform: translate(0,0);
+					img{
+						max-width: 140px;
+					}
+				}
+			}
+			&--radio{
+				grid-area: radio;
+				background-color: #F07D2A;
+				height: auto;
+				justify-content: flex-end;
+				order: 5;
+				width: 100%;
+				.category-toys__img{
+					position: absolute;
+					top: auto;
+					bottom: -20px;
+					left: -5%;
+					transform: translate(0,0);
+					img{
+						max-width: 120px;
+					}
+				}
+			}
+			&--book{
+				height: auto;
+				width: 100%;
+				max-width: 100%;
+				height: auto;
+				order: 7;
+				.category-toys__img{
+					position: absolute;
+					top: 50%;
+					left: -10px;
+					transform: translate(0,-50%);
+					img{
+						max-width: 140px;
+					}
+				}
+			}
+		}
+	}
 }
