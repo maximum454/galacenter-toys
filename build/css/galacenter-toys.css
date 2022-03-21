@@ -542,10 +542,6 @@ body {
   padding-left: 150px;
 }
 
-.banner-toys--bottom .banner-toys__txt {
-  max-width: 395px;
-}
-
 .banner-toys--bottom .banner-toys__img {
   position: absolute;
   top: 50%;
@@ -803,6 +799,10 @@ body {
 
   .category-toys__item--book .category-toys__img img {
     max-width: 300px;
+  }
+
+  .banner-toys--bottom .banner-toys__txt {
+    max-width: 395px;
   }
 }
 

@@ -6,7 +6,7 @@
 			padding-left: 150px;
 		}
 		.banner-toys__txt{
-			max-width: 395px;
+
 		}
 		.banner-toys__img{
 			position: absolute;
@@ -64,6 +64,13 @@
 		width: fit-content;
 		padding-left: 30px;
 		padding-right: 30px;
+	}
+	@include r(1023){
+		&--bottom{
+			.banner-toys__txt{
+				max-width: 395px;
+			}
+		}
 	}
 	@include r(767){
 		&--bottom{
