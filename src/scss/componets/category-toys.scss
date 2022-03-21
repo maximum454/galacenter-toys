@@ -1,3 +1,65 @@
 .category-toys{
+	margin-bottom: 156px;
+	&__body{
+		display: grid;
+		grid-template-areas: 'licensed games children'
+							'creation games avto'
+							'radio book  book';
+		grid-gap: 26px 20px;
+		align-items: flex-start;
+	}
+	&__item{
+		position: relative;
+		background-color: #7AAAF2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+		&--licensed{
+			grid-area: licensed;
+			height: 208px;
 
+		}
+		&--games{
+			grid-area: games;
+			background-color: #8057A9;
+			height: 498px;
+		}
+		&--children{
+			grid-area: children;
+			background-color: #8057A9;
+			height: 306px;
+		}
+		&--creation{
+			grid-area: creation;
+			background-color: #69940E;
+			height: 264px;
+			margin-top: -98px;
+		}
+		&--avto{
+			grid-area: avto;
+			background-color: #842424;
+			height: 166px;
+		}
+		&--radio{
+			grid-area: radio;
+			background-color: #F07D2A;
+			height: 204px;
+		}
+		&--book{
+			grid-area: book;
+			background-color: #E63D77;
+			height: 204px;
+		}
+	}
+	&__name{
+		font-family: $font1;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+	&__img{}
 }

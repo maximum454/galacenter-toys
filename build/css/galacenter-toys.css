@@ -334,6 +334,86 @@ body {
   font-weight: 400;
 }
 
+.category-toys {
+  margin-bottom: 156px;
+}
+
+.category-toys__body {
+  display: grid;
+  grid-template-areas: "licensed games children" "creation games avto" "radio book  book";
+  grid-gap: 26px 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.category-toys__item {
+  position: relative;
+  background-color: #7AAAF2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+.category-toys__item--licensed {
+  grid-area: licensed;
+  height: 208px;
+}
+
+.category-toys__item--games {
+  grid-area: games;
+  background-color: #8057A9;
+  height: 498px;
+}
+
+.category-toys__item--children {
+  grid-area: children;
+  background-color: #8057A9;
+  height: 306px;
+}
+
+.category-toys__item--creation {
+  grid-area: creation;
+  background-color: #69940E;
+  height: 264px;
+  margin-top: -98px;
+}
+
+.category-toys__item--avto {
+  grid-area: avto;
+  background-color: #842424;
+  height: 166px;
+}
+
+.category-toys__item--radio {
+  grid-area: radio;
+  background-color: #F07D2A;
+  height: 204px;
+}
+
+.category-toys__item--book {
+  grid-area: book;
+  background-color: #E63D77;
+  height: 204px;
+}
+
+.category-toys__name {
+  font-family: "RobotoSlab", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
 .banner-toys {
   margin-bottom: 156px;
 }
