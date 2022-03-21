@@ -1,12 +1,29 @@
 .banner-toys{
 	margin-bottom: 156px;
+	&--bottom{
+		.banner-toys__item{
+			justify-content: flex-end;
+		}
+		.banner-toys__img{
+			position: absolute;
+			top: 50%;
+			left: -189px;
+			transform: translate(0,-50%);
+			max-width: 524px;
+		}
+	}
 	&__body{
 		background-color: #31C9C9;
 
 	}
 	&__item{
-		padding: 88px 144px;
+		display: flex;
+		align-items: center;
+		padding: 88px 80px;
 		position: relative;
+	}
+	&__txt{
+		max-width: 658px;
 	}
 	&__title{
 		font-family: $font1;
@@ -33,13 +50,15 @@
 	&__img{
 		position: absolute;
 		top: 50%;
-		right: -100px;
+		right: -166px;
 		transform: translate(0,-50%);
 	}
 	.btn-toys{
 		margin-left: auto;
-		margin-right: 200px;
+		margin-right: 0;
 		display: block;
 		width: fit-content;
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 }

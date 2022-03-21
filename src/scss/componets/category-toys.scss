@@ -5,6 +5,7 @@
 		grid-template-areas: 'licensed games children'
 							'creation games avto'
 							'radio book  book';
+		grid-template-columns: 1fr 264px 1fr;
 		grid-gap: 26px 20px;
 		align-items: flex-start;
 	}
@@ -13,43 +14,88 @@
 		background-color: #7AAAF2;
 		display: flex;
 		align-items: center;
-		justify-content: center;
-		padding: 20px;
+		padding: 20px 50px;
 		&--licensed{
 			grid-area: licensed;
 			height: 208px;
+			justify-content: flex-end;
+			.category-toys__img{
+				position: absolute;
+				top: -38px;
+				left: -82px;
+			}
 
 		}
 		&--games{
 			grid-area: games;
 			background-color: #8057A9;
 			height: 498px;
+			text-align: center;
+			justify-content: center;
+			.category-toys__img{
+				position: absolute;
+				top: -90px;
+				left: -50px;
+				z-index: 1;
+			}
 		}
 		&--children{
 			grid-area: children;
-			background-color: #8057A9;
+			background-color: #F4DC03;
 			height: 306px;
+			.category-toys__img{
+				position: absolute;
+				top: 50%;
+				right: -100px;
+				transform: translate(0,-50%);
+			}
 		}
 		&--creation{
 			grid-area: creation;
 			background-color: #69940E;
 			height: 264px;
 			margin-top: -98px;
+			.category-toys__img{
+				position: absolute;
+				top: 50%;
+				right: -168px;
+				transform: translate(0,-50%);
+			}
 		}
 		&--avto{
 			grid-area: avto;
 			background-color: #842424;
 			height: 166px;
+			.category-toys__img{
+				position: absolute;
+				top: 50%;
+				right: -168px;
+				transform: translate(0,-50%);
+			}
 		}
 		&--radio{
 			grid-area: radio;
 			background-color: #F07D2A;
 			height: 204px;
+			justify-content: flex-end;
+			.category-toys__img{
+				position: absolute;
+				top: 50%;
+				left: -168px;
+				transform: translate(0,-50%);
+			}
 		}
 		&--book{
 			grid-area: book;
 			background-color: #E63D77;
 			height: 204px;
+			justify-content: flex-end;
+			.category-toys__img{
+				position: absolute;
+				top: 50%;
+				left: -23px;
+				transform: translate(0,-50%);
+			}
 		}
 	}
 	&__name{

@@ -252,6 +252,10 @@ body {
   padding-left: 40px;
 }
 
+.gender-toys__item:last-child {
+  margin: 0;
+}
+
 .gender-toys__item--boys {
   background-color: #DCA824;
 }
@@ -341,6 +345,7 @@ body {
 .category-toys__body {
   display: grid;
   grid-template-areas: "licensed games children" "creation games avto" "radio book  book";
+  grid-template-columns: 1fr 264px 1fr;
   grid-gap: 26px 20px;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -356,27 +361,53 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px;
+  padding: 20px 50px;
 }
 
 .category-toys__item--licensed {
   grid-area: licensed;
   height: 208px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.category-toys__item--licensed .category-toys__img {
+  position: absolute;
+  top: -38px;
+  left: -82px;
 }
 
 .category-toys__item--games {
   grid-area: games;
   background-color: #8057A9;
   height: 498px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.category-toys__item--games .category-toys__img {
+  position: absolute;
+  top: -90px;
+  left: -50px;
+  z-index: 1;
 }
 
 .category-toys__item--children {
   grid-area: children;
-  background-color: #8057A9;
+  background-color: #F4DC03;
   height: 306px;
+}
+
+.category-toys__item--children .category-toys__img {
+  position: absolute;
+  top: 50%;
+  right: -100px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .category-toys__item--creation {
@@ -386,22 +417,64 @@ body {
   margin-top: -98px;
 }
 
+.category-toys__item--creation .category-toys__img {
+  position: absolute;
+  top: 50%;
+  right: -168px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
 .category-toys__item--avto {
   grid-area: avto;
   background-color: #842424;
   height: 166px;
 }
 
+.category-toys__item--avto .category-toys__img {
+  position: absolute;
+  top: 50%;
+  right: -168px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
 .category-toys__item--radio {
   grid-area: radio;
   background-color: #F07D2A;
   height: 204px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.category-toys__item--radio .category-toys__img {
+  position: absolute;
+  top: 50%;
+  left: -168px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .category-toys__item--book {
   grid-area: book;
   background-color: #E63D77;
   height: 204px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.category-toys__item--book .category-toys__img {
+  position: absolute;
+  top: 50%;
+  left: -23px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .category-toys__name {
@@ -418,13 +491,39 @@ body {
   margin-bottom: 156px;
 }
 
+.banner-toys--bottom .banner-toys__item {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.banner-toys--bottom .banner-toys__img {
+  position: absolute;
+  top: 50%;
+  left: -189px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  max-width: 524px;
+}
+
 .banner-toys__body {
   background-color: #31C9C9;
 }
 
 .banner-toys__item {
-  padding: 88px 144px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 88px 80px;
   position: relative;
+}
+
+.banner-toys__txt {
+  max-width: 658px;
 }
 
 .banner-toys__title {
@@ -454,7 +553,7 @@ body {
 .banner-toys__img {
   position: absolute;
   top: 50%;
-  right: -100px;
+  right: -166px;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -462,9 +561,11 @@ body {
 
 .banner-toys .btn-toys {
   margin-left: auto;
-  margin-right: 200px;
+  margin-right: 0;
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  padding-left: 30px;
+  padding-right: 30px;
 }

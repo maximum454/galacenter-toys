@@ -15,6 +15,9 @@
 		align-items: center;
 		justify-content: center;
 		padding-left: 40px;
+		&:last-child{
+			margin: 0;
+		}
 		&--boys{
 			background-color: #DCA824;
 		}
