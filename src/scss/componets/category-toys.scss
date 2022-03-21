@@ -112,8 +112,110 @@
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
 		color: #FFFFFF;
+		position: relative;
+		z-index: 1;
 	}
 	&__img{
 		pointer-events: none;
+		img{
+			height: auto;
+			display: block;
+		}
+	}
+	@include r(1023){
+		&__body{
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+		&__item{
+			padding: 25px;
+			&--licensed{
+				grid-area: licensed;
+				height: 208px;
+				padding-left: 60px;
+				.category-toys__img{
+					position: absolute;
+					top: -38px;
+					left: -82px;
+				}
+
+			}
+
+			&--games{
+				grid-area: games;
+				background-color: #8057A9;
+				height: 498px;
+				text-align: center;
+				justify-content: center;
+				.category-toys__img{
+					position: absolute;
+					top: -90px;
+					left: -50px;
+					z-index: 1;
+					img{
+						max-width: 300px;
+					}
+				}
+			}
+			&--children{
+				grid-area: children;
+				background-color: #F4DC03;
+				height: 306px;
+				.category-toys__img{
+					position: absolute;
+					top: 50%;
+					left: 118px;
+					transform: translate(0,-50%);
+				}
+			}
+			&--creation{
+				grid-area: creation;
+				background-color: #69940E;
+				height: 264px;
+				margin-top: -98px;
+			}
+			&--avto{
+				grid-area: avto;
+				background-color: #842424;
+				height: 166px;
+				.category-toys__img{
+					position: absolute;
+					top: 50%;
+					left: 154px;
+					transform: translate(0,-50%);
+				}
+			}
+			&--radio{
+				grid-area: radio;
+				background-color: #F07D2A;
+				height: 204px;
+				justify-content: flex-end;
+				.category-toys__img{
+					position: absolute;
+					top: 50%;
+					left: -200px;
+					transform: translate(0,-50%);
+				}
+			}
+			&--book{
+				grid-area: book;
+				background-color: #E63D77;
+				height: 204px;
+				justify-content: flex-end;
+				width: 100%;
+				max-width: 642px;
+				margin-right: 0;
+				margin-left: auto;
+				padding-left: 200px;
+				.category-toys__img{
+					position: absolute;
+					top: 50%;
+					left: -48px;
+					transform: translate(0,-50%);
+					img{
+						max-width: 300px;
+					}
+				}
+			}
+		}
 	}
 }

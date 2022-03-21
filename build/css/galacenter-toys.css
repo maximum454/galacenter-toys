@@ -493,10 +493,17 @@ body {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFFFFF;
+  position: relative;
+  z-index: 1;
 }
 
 .category-toys__img {
   pointer-events: none;
+}
+
+.category-toys__img img {
+  height: auto;
+  display: block;
 }
 
 .banner-toys {
@@ -511,7 +518,7 @@ body {
 }
 
 .banner-toys--bottom .banner-toys__txt {
-  max-width: 500px;
+  max-width: 395px;
 }
 
 .banner-toys--bottom .banner-toys__img {
@@ -638,5 +645,128 @@ body {
   .gender-toys .btn-toys {
     bottom: -34px;
     right: -10px;
+  }
+
+  .category-toys__body {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .category-toys__item {
+    padding: 25px;
+  }
+
+  .category-toys__item--licensed {
+    grid-area: licensed;
+    height: 208px;
+    padding-left: 60px;
+  }
+
+  .category-toys__item--licensed .category-toys__img {
+    position: absolute;
+    top: -38px;
+    left: -82px;
+  }
+
+  .category-toys__item--games {
+    grid-area: games;
+    background-color: #8057A9;
+    height: 498px;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .category-toys__item--games .category-toys__img {
+    position: absolute;
+    top: -90px;
+    left: -50px;
+    z-index: 1;
+  }
+
+  .category-toys__item--games .category-toys__img img {
+    max-width: 300px;
+  }
+
+  .category-toys__item--children {
+    grid-area: children;
+    background-color: #F4DC03;
+    height: 306px;
+  }
+
+  .category-toys__item--children .category-toys__img {
+    position: absolute;
+    top: 50%;
+    left: 118px;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+
+  .category-toys__item--creation {
+    grid-area: creation;
+    background-color: #69940E;
+    height: 264px;
+    margin-top: -98px;
+  }
+
+  .category-toys__item--avto {
+    grid-area: avto;
+    background-color: #842424;
+    height: 166px;
+  }
+
+  .category-toys__item--avto .category-toys__img {
+    position: absolute;
+    top: 50%;
+    left: 154px;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+
+  .category-toys__item--radio {
+    grid-area: radio;
+    background-color: #F07D2A;
+    height: 204px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .category-toys__item--radio .category-toys__img {
+    position: absolute;
+    top: 50%;
+    left: -200px;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+
+  .category-toys__item--book {
+    grid-area: book;
+    background-color: #E63D77;
+    height: 204px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+    max-width: 642px;
+    margin-right: 0;
+    margin-left: auto;
+    padding-left: 200px;
+  }
+
+  .category-toys__item--book .category-toys__img {
+    position: absolute;
+    top: 50%;
+    left: -48px;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+
+  .category-toys__item--book .category-toys__img img {
+    max-width: 300px;
   }
 }
