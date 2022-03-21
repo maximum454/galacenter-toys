@@ -9,12 +9,13 @@
 			content: '';
 			position: absolute;
 			top: 62px;
-			left: -100px;
+			left: -170px;
 			background-image: url("../img/cloud-1.png");
 			background-repeat: no-repeat;
 			background-size: 100%;
 			width: 673px;
 			height: 348px;
+			pointer-events: none;
 		}
 		&:after{
 			content: '';
@@ -26,6 +27,7 @@
 			background-size: 100%;
 			width: 512px;
 			height: 244px;
+			pointer-events: none;
 		}
 	}
 	&__item{
@@ -40,6 +42,7 @@
 			background-size: 100%;
 			width: 272px;
 			height: 170px;
+			pointer-events: none;
 		}
 	}
 	.btn-toys{

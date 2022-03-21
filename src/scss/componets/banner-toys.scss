@@ -3,6 +3,10 @@
 	&--bottom{
 		.banner-toys__item{
 			justify-content: flex-end;
+			padding-left: 150px;
+		}
+		.banner-toys__txt{
+			max-width: 500px;
 		}
 		.banner-toys__img{
 			position: absolute;
