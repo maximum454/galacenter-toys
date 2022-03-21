@@ -284,10 +284,6 @@ body {
   text-decoration: none;
 }
 
-.gender-toys__item:last-child {
-  margin: 0;
-}
-
 .gender-toys__item--boys {
   background-color: #DCA824;
 }
@@ -301,6 +297,7 @@ body {
   padding-left: 83px;
   background-color: #AB4A9C;
   margin-left: 100px;
+  margin-bottom: 0;
 }
 
 .gender-toys__item--baby .gender-toys__img {
@@ -862,6 +859,68 @@ body {
     width: 320px;
     height: 320px;
     z-index: 0;
+  }
+
+  .gender-toys {
+    margin-bottom: 0;
+  }
+
+  .gender-toys__item {
+    height: 144px;
+    width: 80%;
+    margin-bottom: 77px;
+    padding: 25px;
+    margin-right: 0;
+    margin-left: auto;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .gender-toys__item--boys {
+    background-color: #DCA824;
+  }
+
+  .gender-toys__item--baby {
+    max-width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-left: 25px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .gender-toys__item--baby .gender-toys__img {
+    position: absolute;
+    bottom: 0;
+    left: -30%;
+    top: auto;
+  }
+
+  .gender-toys__item--baby .btn-toys {
+    bottom: -34px !important;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+
+  .gender-toys__item--baby:before {
+    display: none;
+  }
+
+  .gender-toys__item--baby:after {
+    display: none;
+  }
+
+  .gender-toys__img {
+    position: absolute;
+    bottom: 0;
+    left: -30%;
+  }
+
+  .gender-toys__img img {
+    max-width: 170px;
   }
 
   .category-toys {

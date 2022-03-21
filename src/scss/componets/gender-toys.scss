@@ -16,9 +16,6 @@
 		justify-content: center;
 		padding-left: 40px;
 		text-decoration: none;
-		&:last-child{
-			margin: 0;
-		}
 		&--boys{
 			background-color: #DCA824;
 		}
@@ -29,6 +26,7 @@
 			padding-left: 83px;
 			background-color: #AB4A9C;
 			margin-left: 100px;
+			margin-bottom: 0;
 			.gender-toys__img{
 				position: relative;
 				order: 2;
@@ -127,6 +125,52 @@
 		.btn-toys{
 			bottom: -34px;
 			right: -10px;
+		}
+	}
+	@include r(767){
+		margin-bottom: 0;
+		&__item{
+			height: 144px;
+			width: 80%;
+			margin-bottom: 77px;
+			padding: 25px;
+			margin-right: 0;
+			margin-left: auto;
+			justify-content: flex-end;
+			&--boys{
+				background-color: #DCA824;
+			}
+			&--baby{
+				max-width: 100%;
+				justify-content: flex-end;
+				padding-left: 25px;
+				margin-left: auto;
+				margin-right: 0;
+				.gender-toys__img{
+					position: absolute;
+					bottom: 0;
+					left: -30%;
+					top: auto;
+				}
+				.btn-toys{
+					bottom: -34px !important;
+					transform: translate(0,0);
+				}
+				&:before{
+					display: none;
+				}
+				&:after{
+					display: none;
+				}
+			}
+		}
+		&__img{
+			position: absolute;
+			bottom: 0;
+			left: -30%;
+			img{
+				max-width: 170px;
+			}
 		}
 	}
 
