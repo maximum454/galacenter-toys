@@ -250,6 +250,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 40px;
+  text-decoration: none;
 }
 
 .gender-toys__item:last-child {
@@ -262,7 +263,7 @@ body {
 
 .gender-toys__item--baby {
   width: 100%;
-  max-width: 690px;
+  max-width: 747px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -362,6 +363,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 50px;
+  text-decoration: none;
 }
 
 .category-toys__item--licensed {
