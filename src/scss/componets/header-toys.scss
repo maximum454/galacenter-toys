@@ -69,6 +69,7 @@
 			width: 679px;
 			height: 455px;
 			z-index: 0;
+			pointer-events: none;
 		}
 
 	}
@@ -82,23 +83,25 @@
 	}
 	@include r(1023){
 		&__item{
-			padding: 150px 0 150px;
+			padding: 76px 0 182px;
 			text-align: center;
 		}
 		.btn-toys{
-			margin-top: 33px;
+			margin-top: 34px;
 			margin-right: auto;
+			padding: 15px 49px;
 		}
 	}
 	@include r(767){
+		margin-bottom: 41px;
 		&__body{
 			padding: 112px 0 0;
 
 		}
 		&__monstr{
 			position: absolute;
-			top: 0;
-			right: 0;
+			top: 4px;
+			right: -5px;
 			background-image: url("../img/header-toys-monstr.png");
 			background-repeat: no-repeat;
 			background-size: 100%;
@@ -107,12 +110,12 @@
 		}
 		&__cloud1{
 			position: absolute;
-			top: 62px;
-			left: -170px;
+			top: 35px;
+			left: -120px;
 			background-image: url("../img/cloud-1.png");
 			background-repeat: no-repeat;
 			background-size: 100%;
-			width: 400px;
+			width: 348px;
 			height: 266px;
 			pointer-events: none;
 			z-index: 1;
@@ -125,9 +128,9 @@
 		}
 		&__item{
 			&:before{
-				bottom: -200px;
-				left: 0;
-				width: 320px;
+				bottom: -155px;
+				left: -132px;
+				width: 488px;
 				height: 320px;
 				z-index: 0;
 			}

@@ -237,6 +237,7 @@ body {
   width: 679px;
   height: 455px;
   z-index: 0;
+  pointer-events: none;
 }
 
 .header-toys .btn-toys {
@@ -282,6 +283,10 @@ body {
           justify-content: center;
   padding-left: 40px;
   text-decoration: none;
+}
+
+.gender-toys__item--girl {
+  left: 60px;
 }
 
 .gender-toys__item--boys {
@@ -463,7 +468,7 @@ body {
 .category-toys__item--avto .category-toys__img {
   position: absolute;
   top: 50%;
-  left: 267px;
+  left: 235px;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -481,7 +486,7 @@ body {
 .category-toys__item--radio .category-toys__img {
   position: absolute;
   top: 50%;
-  left: -200px;
+  left: -156px;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -533,6 +538,10 @@ body {
 
 .banner-toys {
   margin-bottom: 156px;
+}
+
+.banner-toys--bottom .banner-toys__body {
+  background-color: #19B2E2;
 }
 
 .banner-toys--bottom .banner-toys__item {
@@ -617,17 +626,22 @@ body {
 
 @media only screen and (max-width: 1023px) {
   .header-toys__item {
-    padding: 150px 0 150px;
+    padding: 76px 0 182px;
     text-align: center;
   }
 
   .header-toys .btn-toys {
-    margin-top: 33px;
+    margin-top: 34px;
     margin-right: auto;
+    padding: 15px 49px;
   }
 
   .gender-toys__item {
     width: 100%;
+  }
+
+  .gender-toys__item--girl {
+    left: 0;
   }
 
   .gender-toys__item--baby {
@@ -810,11 +824,16 @@ body {
   .title-toys {
     font-size: 24px;
     line-height: 32px;
+    margin-bottom: 24px;
   }
 
   .subtitle-toys {
     font-size: 14px;
     line-height: 18px;
+  }
+
+  .header-toys {
+    margin-bottom: 41px;
   }
 
   .header-toys__body {
@@ -823,8 +842,8 @@ body {
 
   .header-toys__monstr {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 4px;
+    right: -5px;
     background-image: url("../img/header-toys-monstr.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -834,12 +853,12 @@ body {
 
   .header-toys__cloud1 {
     position: absolute;
-    top: 62px;
-    left: -170px;
+    top: 35px;
+    left: -120px;
     background-image: url("../img/cloud-1.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 400px;
+    width: 348px;
     height: 266px;
     pointer-events: none;
     z-index: 1;
@@ -854,9 +873,9 @@ body {
   }
 
   .header-toys__item:before {
-    bottom: -200px;
-    left: 0;
-    width: 320px;
+    bottom: -155px;
+    left: -132px;
+    width: 488px;
     height: 320px;
     z-index: 0;
   }
@@ -875,6 +894,10 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+
+  .gender-toys__item--girl {
+    left: 0;
   }
 
   .gender-toys__item--boys {
@@ -916,11 +939,27 @@ body {
   .gender-toys__img {
     position: absolute;
     bottom: 0;
-    left: -30%;
+    left: -27%;
   }
 
   .gender-toys__img img {
-    max-width: 170px;
+    max-width: 145px;
+  }
+
+  .gender-toys h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .gender-toys .btn-toys {
+    position: absolute;
+    bottom: -26px;
+    right: -3px;
+    padding: 13px 29px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
   }
 
   .category-toys {

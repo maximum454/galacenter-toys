@@ -1,6 +1,9 @@
 .banner-toys{
 	margin-bottom: 156px;
 	&--bottom{
+		.banner-toys__body{
+			background-color: #19B2E2;
+		}
 		.banner-toys__item{
 			justify-content: flex-end;
 			padding-left: 150px;
