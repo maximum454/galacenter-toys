@@ -76,16 +76,20 @@
 		}
 	}
 	@include r(767){
+		margin-bottom: 101px;
 		&--bottom{
+			margin-bottom: 190px;
 			.banner-toys__title{
 				margin-bottom: 24px;
 			}
 			.banner-toys__subtitle{
 				margin-bottom: 24px;
+				font-weight: 400;
 			}
 			.banner-toys__item{
 				justify-content: flex-end;
-				padding-left: 40px;
+				padding-left: 49px;
+				padding-top: 33px;
 				text-align: left;
 			}
 			.banner-toys__txt{
@@ -94,35 +98,39 @@
 			.banner-toys__img{
 				position: absolute;
 				top: auto;
-				bottom: -100px;
+				bottom: -196px;
 				left:auto;
-				right: 0;
-				transform: translate(0,0);
+				right: -23px;
+				transform: translate(0,0) rotate(32deg);
 				max-width: 100%;
 				img{
-					width: 300px;
+					max-width: 234px;
 				}
 			}
 		}
 		&__item{
 			justify-content: center;
 			text-align: center;
-			padding: 40px;
+			padding: 41px 10px;
 		}
 		&__img{
 			position: absolute;
 			top: auto;
-			bottom: -60px;
-			right: 40px;
-			transform: translate(0,0);
+			bottom: -64px;
+			right: -5px;
+			transform: translate(0,0) rotate(10deg);
 			img{
-				max-width: 150px;
+				max-width: 152px;
 			}
 		}
+		&__title{
+			margin-bottom: 20px;
+		}
 		.btn-toys{
-			margin-right: auto;
-			margin-left: 0;
-			margin-top: 30px;
+			margin: 36px 0 8px 39px;
+			font-size: 18px;
+			line-height: 24px;
+			padding: 10px 28px;
 		}
 	}
 }
